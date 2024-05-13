@@ -55,7 +55,6 @@
         <script src="data/leisures_59.js"></script>
         <script src="data/healthcare_60.js"></script>
         <script src="data/building_61.js"></script>
-        <script src="data/amenity_62.js"></script>
         <script src="data/greenspace_63.js"></script>
         <script src="data/SuttonNightWatchOffice_65.js"></script>
         <script>
@@ -164,15 +163,6 @@
                                               {pane: 'pane_P9_heatmap_morning_5'});
         bounds_group.addLayer(layer_P9_heatmap_morning_5);
         map.addLayer(layer_P9_heatmap_morning_5);
-        map.createPane('pane_P9_heatmap_alltime_6');
-        map.getPane('pane_P9_heatmap_alltime_6').style.zIndex = 406;
-        var img_P9_heatmap_alltime_6 = 'data/P9_heatmap_alltime_6.png';
-        var img_bounds_P9_heatmap_alltime_6 = [[51.26772058487013,-0.5463440069445862],[51.65508900094229,1.3983681224131743]];
-        var layer_P9_heatmap_alltime_6 = new L.imageOverlay(img_P9_heatmap_alltime_6,
-                                              img_bounds_P9_heatmap_alltime_6,
-                                              {pane: 'pane_P9_heatmap_alltime_6'});
-        bounds_group.addLayer(layer_P9_heatmap_alltime_6);
-        map.addLayer(layer_P9_heatmap_alltime_6);
         function pop_P9_resttime_7(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -596,15 +586,6 @@
                                               {pane: 'pane_P5_heatmap_night_29'});
         bounds_group.addLayer(layer_P5_heatmap_night_29);
         map.addLayer(layer_P5_heatmap_night_29);
-        map.createPane('pane_P5_heatmap_alltime_30');
-        map.getPane('pane_P5_heatmap_alltime_30').style.zIndex = 430;
-        var img_P5_heatmap_alltime_30 = 'data/P5_heatmap_alltime_30.png';
-        var img_bounds_P5_heatmap_alltime_30 = [[50.70109914674356,-1.798681116410366],[51.524010372636745,0.16475077911778233]];
-        var layer_P5_heatmap_alltime_30 = new L.imageOverlay(img_P5_heatmap_alltime_30,
-                                              img_bounds_P5_heatmap_alltime_30,
-                                              {pane: 'pane_P5_heatmap_alltime_30'});
-        bounds_group.addLayer(layer_P5_heatmap_alltime_30);
-        map.addLayer(layer_P5_heatmap_alltime_30);
         function pop_P5_resttime_31(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
