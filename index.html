@@ -1553,15 +1553,6 @@
 
         bounds_group.addLayer(layer_greenspace_63);
         cluster_greenspace_63.addTo(map);
-        map.createPane('pane_AllParticipants_Heatmap_AllTime_64');
-        map.getPane('pane_AllParticipants_Heatmap_AllTime_64').style.zIndex = 464;
-        var img_AllParticipants_Heatmap_AllTime_64 = 'data/AllParticipants_Heatmap_AllTime_64.png';
-        var img_bounds_AllParticipants_Heatmap_AllTime_64 = [[50.672948881923084,-1.7986810891669802],[51.66403981057773,1.398360680225558]];
-        var layer_AllParticipants_Heatmap_AllTime_64 = new L.imageOverlay(img_AllParticipants_Heatmap_AllTime_64,
-                                              img_bounds_AllParticipants_Heatmap_AllTime_64,
-                                              {pane: 'pane_AllParticipants_Heatmap_AllTime_64'});
-        bounds_group.addLayer(layer_AllParticipants_Heatmap_AllTime_64);
-        map.addLayer(layer_AllParticipants_Heatmap_AllTime_64);
         function pop_SuttonNightWatchOffice_65(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1634,7 +1625,6 @@
         var baseMaps = {};
         var overlaysTree = [
             {label: '<img src="legend/SuttonNightWatchOffice_65.png" /> Sutton Night Watch Office', layer: cluster_SuttonNightWatchOffice_65},
-            {label: "All Participants_Heatmap_All Time", layer: layer_AllParticipants_Heatmap_AllTime_64},
         {label: '<b>Point of Interests</b>', selectAllCheckbox: true, children: [
             {label: '<img src="legend/greenspace_63.png" /> green space', layer: cluster_greenspace_63},
             {label: '<img src="legend/amenity_62.png" /> amenity', layer: cluster_amenity_62},
@@ -1678,7 +1668,6 @@
             {label: "P4_heatmap_afternoon", layer: layer_P4_heatmap_afternoon_32},]},
         {label: '<b>Participant 5</b>', selectAllCheckbox: true, children: [
             {label: '<img src="legend/P5_resttime_31.png" /> P5_rest time', layer: cluster_P5_resttime_31},
-            {label: "P5_heatmap_all time", layer: layer_P5_heatmap_alltime_30},]},
         {label: '<b>P5_movement day-night</b>', selectAllCheckbox: true, children: [
             {label: "P5_heatmap_night", layer: layer_P5_heatmap_night_29},
             {label: "P5_heatmap_evening", layer: layer_P5_heatmap_evening_28},
@@ -1710,7 +1699,6 @@
             {label: "P8_heatmap_morning", layer: layer_P8_heatmap_morning_8},]},
         {label: '<b>Participant 9</b>', selectAllCheckbox: true, children: [
             {label: '<img src="legend/P9_resttime_7.png" /> P9_rest time', layer: cluster_P9_resttime_7},
-            {label: "P9_heatmap_all time", layer: layer_P9_heatmap_alltime_6},]},
         {label: '<b>P9_movement day-night</b>', selectAllCheckbox: true, children: [
             {label: "P9_heatmap_morning", layer: layer_P9_heatmap_morning_5},
             {label: "P9_heatmap_afternoon", layer: layer_P9_heatmap_afternoon_4},
